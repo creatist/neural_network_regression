@@ -7,11 +7,7 @@ import matplotlib.pyplot as plt
  
 # 生成数据
 X = np.linspace(-1, 1, 200) #在返回（-1, 1）范围内的等差序列
-X1 = np.linspace(-1, 1, 200) #在返回（-1, 1）范围内的等差序列
-X2 = np.linspace(-1, 1, 200) #在返回（-1, 1）范围内的等差序列
 np.random.shuffle(X)    # 打乱顺序
-np.random.shuffle(X1)    # 打乱顺序
-np.random.shuffle(X2)    # 打乱顺序
 #Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, )) #生成Y并添加噪声
 Y = X*X   + np.random.normal(0, 0.05, (200, )) #生成Y并添加噪声
 # plot
